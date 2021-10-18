@@ -1,7 +1,11 @@
 .my-nav{
     padding-right: 40px;
 }
-.my-nav a{
+.my-nav{
+    color: rgba(0, 0, 0, 0.918);
+    text-decoration: none;
+}
+.my-nav:hover{
     color: #2f89fc;
 }
 

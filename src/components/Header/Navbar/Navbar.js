@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useFirebase from '../../hooks/useFirebase';
 import './Navbar.css';
 
 const Navbar = () => {
+    const {user,handleSignOut} = useFirebase();
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light container">
@@ -13,28 +15,22 @@ const Navbar = () => {
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarText">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item my-nav">
-                                <a className="nav-link" aria-current="page" href="www.sdd.com">Home</a>
-                            </li>
-                            <li className="nav-item my-nav">
-                                <a className="nav-link"  href="www.sdd.com">About</a>
-                            </li>
-                            <li className="nav-item my-nav ">
-                                <a className="nav-link"  href="www.sdd.com">Doctors</a>
-                            </li>
-                            <li className="nav-item my-nav">
-                                <a className="nav-link"  href="www.sdd.com">Pricing</a>
-                            </li>
-                            <li className="nav-item my-nav">
-                                <a className="nav-link"  href="www.sdd.com">Blogs</a>
-                            </li>
-                            <li className="nav-item my-nav">
-                                <a className="nav-link"  href="www.sdd.com">Contact</a>
-                            </li>
-                        </ul>
+                        <div className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <Link className="nav-item my-nav" to="/home">Home</Link>
+                                <Link className="nav-item my-nav" to="/about">About</Link>
+                                <Link className="nav-item my-nav" to="/doctors">Doctors</Link>
+                                <Link className="nav-item my-nav" to="/pricing">Pricing</Link>
+                                <Link className="nav-item my-nav" to="/blogs">Blogs</Link>
+                                <Link className="nav-item my-nav" to="/contact">Contact</Link>
+                                
+                        </div>
 
                         <span className="navbar-text">
+                            {user.email ?
+                                <><span>{user.displayName} </span> <button onClick={handleSignOut} className="appointment-btn me-2">Sign Out</button>
+                                </>:
+                                <Link to="/signIn"><button className="appointment-btn me-2">Sign In</button></Link>
+                            }
                             <button className="appointment-btn">Make an Appoinment</button>
 
                         </span>
