@@ -8,6 +8,7 @@ import Banner from './components/Header/Banner/Banner';
 import HeaderMain from './components/Header/HeaderMain/HeaderMain';
 import Navbar from './components/Header/Navbar/Navbar';
 import Home from './components/Home/Home/Home';
+import NotFound from './components/NotFound/NotFound';
 import PrivateRoute from './components/SignIn/PrivateRoute/PrivateRoute';
 import SignIn from './components/SignIn/SignIn/SignIn';
 
@@ -39,15 +40,25 @@ function App() {
             <Navbar></Navbar>
             <Contact></Contact>
           </PrivateRoute>
-          <Route path="/service-details/:serviceId">
+          <PrivateRoute path="/service-details/:serviceId">
             <DerviceDetails></DerviceDetails>
-          </Route>
+          </PrivateRoute>
           <Route path="/signIn">
             <HeaderMain></HeaderMain>
             <Navbar></Navbar>
             <SignIn></SignIn>
           </Route>
 
+
+
+
+
+
+
+          
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
         </Switch>
       </BrowserRouter>
     </AuthProvider>
