@@ -9,7 +9,6 @@ const PrivateRoute = ({ children, ...rest }) => {
               <span class="visually-hidden">Loading...</span>
             </div>);
     }
-    console.log(user);
     return(
       <Route
       {...rest}

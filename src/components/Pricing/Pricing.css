@@ -1,0 +1,29 @@
+.pricing-container{
+    border: 1px solid #2f89fc;
+    padding: 45px 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.pricing-container:hover {
+    border: 1px solid #fc922f;
+}
+.pricing-container:hover button{
+    background-color: #fc922f;
+    border: 1px solid #e98527;
+}
+.pricing-container:hover h1{
+    color: #fc922f;
+}
+.price{
+    color: #2f89fc;
+    font-weight: 600;
+    margin-bottom: 35px;
+    margin-top: 20px; 
+}
+.priceing-btn{
+    background-color: #2f89fc;
+    color: #fff;
+    padding: 4px 45px;
+    border: 1px solid #3380e4;
+}

@@ -12,6 +12,7 @@ import HeaderMain from './components/Header/HeaderMain/HeaderMain';
 import Navbar from './components/Header/Navbar/Navbar';
 import Home from './components/Home/Home/Home';
 import NotFound from './components/NotFound/NotFound';
+import Pricing from './components/Pricing/Pricing';
 import PrivateRoute from './components/SignIn/PrivateRoute/PrivateRoute';
 import SignIn from './components/SignIn/SignIn/SignIn';
 
@@ -59,6 +60,12 @@ function App() {
             <HeaderMain></HeaderMain>
             <Navbar></Navbar>
             <Appoinment></Appoinment>
+            <Footer></Footer>
+          </PrivateRoute>
+          <PrivateRoute path="/pricing">
+            <HeaderMain></HeaderMain>
+            <Navbar></Navbar>
+            <Pricing></Pricing>
             <Footer></Footer>
           </PrivateRoute>
           <PrivateRoute path="/service-details/:serviceId">
