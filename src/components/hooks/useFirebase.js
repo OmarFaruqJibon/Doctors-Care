@@ -30,6 +30,7 @@ const useFirebase = () => {
             .then((result) => {
                 const user = result.user;
                 setUser(user);
+                setError('');
             }).catch((error) => {
                 const errorMessage = error.message;
                 setError(errorMessage);

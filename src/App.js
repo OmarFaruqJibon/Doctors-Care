@@ -71,6 +71,7 @@ function App() {
             <HeaderMain></HeaderMain>
             <Navbar></Navbar>
             <SignIn></SignIn>
+            <Footer></Footer>
           </Route>
 
 
