@@ -17,8 +17,8 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarText">
                         <div className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <Link className="nav-item my-nav" to="/home">Home</Link>
+                                <Link className="nav-item my-nav" to="/appoinment">Appoinment</Link>
                                 <Link className="nav-item my-nav" to="/about">About</Link>
-                                <Link className="nav-item my-nav" to="/doctors">Doctors</Link>
                                 <Link className="nav-item my-nav" to="/pricing">Pricing</Link>
                                 <Link className="nav-item my-nav" to="/blogs">Blogs</Link>
                                 <Link className="nav-item my-nav" to="/contact">Contact</Link>
@@ -31,7 +31,7 @@ const Navbar = () => {
                                 </>:
                                 <Link to="/signIn"><button className="appointment-btn me-2">Sign In</button></Link>
                             }
-                            <button className="appointment-btn">Make an Appoinment</button>
+                            {/* <button className="appointment-btn">Make an Appoinment</button> */}
 
                         </span>
                     </div>

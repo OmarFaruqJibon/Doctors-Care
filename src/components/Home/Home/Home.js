@@ -14,7 +14,7 @@ const Home = () => {
     const fourCourses = services.slice(0, 6);
 
     return (
-        <div>
+        <div className="home-container">
             {/* Services section start */}
             <div className="service-section mb-5 mt-5">
                 <h1 className="coutses-title container">Our Services</h1>

@@ -1,6 +1,8 @@
 import { BrowserRouter , Switch , Route} from 'react-router-dom';
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
+import Appoinment from './components/Apoinment/Appoinment';
+import Blogs from './components/Blogs/Blogs';
 import Contact from './components/Contact/Contact';
 import AuthProvider from './components/context/authProvider';
 import DerviceDetails from './components/DerviceDetails/DerviceDetails';
@@ -24,6 +26,7 @@ function App() {
             <Navbar></Navbar>
             <Banner></Banner>
             <Home></Home>
+            <Blogs></Blogs>
             <Footer></Footer>
           </Route>
           <Route path="/home">
@@ -31,6 +34,7 @@ function App() {
             <Navbar></Navbar>
             <Banner></Banner>
             <Home></Home>
+            <Blogs></Blogs>
             <Footer></Footer>
           </Route>
           <Route path="/about">
@@ -39,10 +43,22 @@ function App() {
             <AboutUs></AboutUs>
             <Footer></Footer>
           </Route>
+          <Route path="/blogs">
+            <HeaderMain></HeaderMain>
+            <Navbar></Navbar>
+            <Blogs></Blogs>
+            <Footer></Footer>
+          </Route>
           <PrivateRoute path="/contact">
             <HeaderMain></HeaderMain>
             <Navbar></Navbar>
             <Contact></Contact>
+            <Footer></Footer>
+          </PrivateRoute>
+          <PrivateRoute path="/appoinment">
+            <HeaderMain></HeaderMain>
+            <Navbar></Navbar>
+            <Appoinment></Appoinment>
             <Footer></Footer>
           </PrivateRoute>
           <PrivateRoute path="/service-details/:serviceId">

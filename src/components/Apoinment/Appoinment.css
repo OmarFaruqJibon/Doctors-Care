@@ -1,0 +1,8 @@
+.contact{
+    background: #04091e;
+    position: relative;
+    z-index: 1;
+}
+.input-part{
+    display: flex;
+}
