@@ -2,15 +2,18 @@ import { BrowserRouter , Switch , Route} from 'react-router-dom';
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
 import Contact from './components/Contact/Contact';
+import AuthProvider from './components/context/authProvider';
+import DerviceDetails from './components/DerviceDetails/DerviceDetails';
 import Banner from './components/Header/Banner/Banner';
 import HeaderMain from './components/Header/HeaderMain/HeaderMain';
 import Navbar from './components/Header/Navbar/Navbar';
 import Home from './components/Home/Home/Home';
+import PrivateRoute from './components/SignIn/PrivateRoute/PrivateRoute';
 import SignIn from './components/SignIn/SignIn/SignIn';
 
 function App() {
   return (
-    <div>
+    <AuthProvider>
 
       <BrowserRouter>
         <Switch>
@@ -31,10 +34,13 @@ function App() {
             <Navbar></Navbar>
             <AboutUs></AboutUs>
           </Route>
-          <Route path="/contact">
+          <PrivateRoute path="/contact">
             <HeaderMain></HeaderMain>
             <Navbar></Navbar>
             <Contact></Contact>
+          </PrivateRoute>
+          <Route path="/service-details/:serviceId">
+            <DerviceDetails></DerviceDetails>
           </Route>
           <Route path="/signIn">
             <HeaderMain></HeaderMain>
@@ -42,14 +48,9 @@ function App() {
             <SignIn></SignIn>
           </Route>
 
-
-
-
-
-
         </Switch>
       </BrowserRouter>
-    </div>
+    </AuthProvider>
   );
 }
 

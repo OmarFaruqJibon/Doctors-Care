@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
-    const [courses, setCourses] = useState([]);
+    const [services, setServices] = useState([]);
     useEffect( () => {
         fetch('./services.json')
         .then(res=>res.json())
-        .then(data=>setCourses(data));
+        .then(data=>setServices(data));
     },[]);
-
+    // console.log(service);
     // slice courses array to 4 elements
-    const fourCourses = courses.slice(0, 6);
+    const fourCourses = services.slice(0, 6);
 
     return (
         <div>
@@ -35,7 +36,7 @@ const Home = () => {
                                         <p className="price"><small>$ {course.price}</small></p>
                                     </div>
                                 <div className="text-center">
-                                    <button className="btn detail-btn">Learn More</button>
+                                    <Link to={`/service-details/${course._id}`}><button className="btn detail-btn">Learn More</button></Link>
                                 </div>
                                     
                                 </div>

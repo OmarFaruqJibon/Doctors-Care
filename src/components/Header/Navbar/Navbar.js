@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 import './Navbar.css';
 
 const Navbar = () => {
-    const {user,handleSignOut} = useFirebase();
+    const {user,handleSignOut} = useAuth();
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light container">
