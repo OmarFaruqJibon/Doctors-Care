@@ -2,9 +2,9 @@ import React from 'react';
 import './Appoinment.css';
 const Appoinment = () => {
     return (
-        <section className="contact my-5 py-5">
+        <div className="apoinment my-5 py-5">
             <div className="container">
-                <div className="section-header text-center text-white mb-5">
+                <div className="text-center text-white mb-5">
                     <h2 className="text-warning">Book An Appoinment</h2>
                     <h5>Fill up carefully</h5>
                 </div>
@@ -23,7 +23,7 @@ const Appoinment = () => {
                         <div className="form-group mb-3">
                             <div className="input-part">
                                 <input type="text" className="form-control bg-light text-white" placeholder="Date of Birth " />
-                                <input type="text" className="ms-3 form-control bg-light text-white" placeholder="Appoinment Date " />
+                                <input type="text" className="ms-3 form-control bg-light text-white" placeholder="Appoinment Date *" />
                             </div>
                         </div>
                         <div className="form-group mb-3">
@@ -35,7 +35,7 @@ const Appoinment = () => {
                     </form>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

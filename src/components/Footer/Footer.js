@@ -7,8 +7,8 @@ const Footer = () => {
         <div className="footer-container">
             <div className="row">
                 <div className="col-md-4 col-12">
-                    <div className="footer-logo brand text-white">
-                        <h1 className="text-white">Dr.<span>Care</span> </h1>
+                    <div className="footer-logo">
+                        <h1 className="f-logo fw-bolder">Dr.<span>Care</span> </h1>
                     </div>
                     <div className="social-icons">
                         <a target="blank" href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
@@ -20,7 +20,7 @@ const Footer = () => {
                 <div className="col-md-4 col-12">
                     <h5 className="footer-menu">NAVIGATE</h5>
                     <div className="footer-nav">
-                        <Link className="nav-item my-nav" to="/home">Home</Link>
+                        <Link className="footer-nav-item" to="/home">Home</Link>
                         <Link className="footer-nav-item" to="/about">About</Link>
                         <Link className="footer-nav-item" to="/doctors">Doctors</Link>
                         <Link className="footer-nav-item" to="/pricing">Pricing</Link>

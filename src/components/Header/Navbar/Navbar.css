@@ -9,24 +9,16 @@
     color: #2f89fc;
 }
 
-
-
-
-
-
-
-
-
 .appointment-btn{
-    background: #ff8000;
-    border: 1px solid #ff8000;
+    background: #1e78c1;
+    border: 1px solid #17598f;
     color: #fff;
     cursor: pointer;
-    border-radius: 20px;
-    padding: 3px 11px;
+    padding: 4px 27px;
+    margin-left: 10px;
 }
 .appointment-btn:hover{
     background-color:#fff;
-    border: 1px solid #ff8000;
+    border: 1px solid #17598f;
     color: black;
 }

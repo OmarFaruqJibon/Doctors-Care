@@ -1,25 +1,22 @@
 .home-container{
     margin-bottom: 100px;
 }
-.cart{
+.service{
     box-shadow: 0 12px 13px rgb(0 0 0 / 16%), 0 12px 13px rgb(0 0 0 / 16%);
+    height: 485px;
 }
 .thumb img{
     width: 100%;
     height: 186px;
     border-radius: 10px 10px 0 0;
 }
-.cart-detail{
+.service-detail{
     text-align: left;
     font-weight: 400;
-    padding: 10px;
-}
-.price{
-    color: #1e78c1;
-    font-weight: bold;
+    padding: 15px;
 }
 .detail-btn{
-    margin-top: 26px;
+    margin-top: 5px;
     background-color: #1e78c1;
     color:white;
     border: none;
@@ -33,14 +30,25 @@
     color:black;
     border: 1px solid #1e78c1;
 }
-.rating{
-    color: goldenrod;
-    margin-left: 5px;
+
+.consultants-section{
+    margin-top: 100px;
+    overflow: hidden;
 }
-
-
 .consultants-body img{
     height: 250px;
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
+}
+.help-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: #04091e;
+}
+.help-input-field{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }

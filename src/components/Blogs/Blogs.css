@@ -4,12 +4,14 @@
 }
 .blog{
     box-shadow: 0 12px 13px rgb(0 0 0 / 16%), 0 12px 13px rgb(0 0 0 / 16%);
+    height: 470px;
 }
 .thumb img{
     width: 100%;
     height: 186px;
     border-radius: 10px 10px 0 0;
 }
+
 .blog-detail{
     text-align: left;
     font-weight: 400;
@@ -17,4 +19,10 @@
 }
 .blog-detail h4{
     font-weight: 600;
+}
+.publish-date{
+    background-color: black;
+    color: #d5d5d5;
+    padding: 2px 18px;
+    font-weight: 100;
 }

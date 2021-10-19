@@ -9,8 +9,15 @@
     flex-direction: column;
 }
 .footer-logo{
-    margin-top:18px;
-    margin-left: 44px;
+    margin-top: 73px;
+    margin-left: 88px;
+    color: #ff8000;
+}
+.f-logo{
+    color: #1e78c1;
+}
+.f-logo span{
+    color: #ff8000;
 }
 .social-icons{
     text-align: left;

@@ -5,7 +5,7 @@ import Appoinment from './components/Apoinment/Appoinment';
 import Blogs from './components/Blogs/Blogs';
 import Contact from './components/Contact/Contact';
 import AuthProvider from './components/context/authProvider';
-import DerviceDetails from './components/DerviceDetails/DerviceDetails';
+import ServiceDetails from './components/DerviceDetails/ServiceDetails';
 import Footer from './components/Footer/Footer';
 import Banner from './components/Header/Banner/Banner';
 import HeaderMain from './components/Header/HeaderMain/HeaderMain';
@@ -64,7 +64,7 @@ function App() {
           <PrivateRoute path="/service-details/:serviceId">
             <HeaderMain></HeaderMain>
             <Navbar></Navbar>
-            <DerviceDetails></DerviceDetails>
+            <ServiceDetails></ServiceDetails>
             <Footer></Footer>
           </PrivateRoute>
           <Route path="/signIn">

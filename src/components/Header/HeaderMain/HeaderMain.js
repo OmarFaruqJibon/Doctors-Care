@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './HeaderMain.css';
 
 const HeaderMain = () => {
@@ -9,7 +10,7 @@ const HeaderMain = () => {
 
                     <div className="col-lg-3 col-md-6 col-12">
                         <div className="p-3 brand">
-                            <h1>Dr.<span>Care</span> </h1>
+                            <Link to="/"><h1 className="fw-bold">Dr.<span>Care</span> </h1></Link>
                         </div>
                     </div>
 
