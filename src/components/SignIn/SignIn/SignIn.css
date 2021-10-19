@@ -110,14 +110,15 @@
   .form-bottom-container p {
     font-size: 17px;
     font-weight: 500;
-    cursor: pointer;
+    
   }
   .form-bottom-container p:nth-child(1) {
     color: #707070;
     margin-bottom: 10px;
   }
   .form-bottom-container p:nth-child(2) {
-    color: #195159;
+    color: #090cbd;
+    cursor: pointer;
   }
   .google-btn{
     background-color: #195159;

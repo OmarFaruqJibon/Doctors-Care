@@ -4,6 +4,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Contact from './components/Contact/Contact';
 import AuthProvider from './components/context/authProvider';
 import DerviceDetails from './components/DerviceDetails/DerviceDetails';
+import Footer from './components/Footer/Footer';
 import Banner from './components/Header/Banner/Banner';
 import HeaderMain from './components/Header/HeaderMain/HeaderMain';
 import Navbar from './components/Header/Navbar/Navbar';
@@ -23,25 +24,32 @@ function App() {
             <Navbar></Navbar>
             <Banner></Banner>
             <Home></Home>
+            <Footer></Footer>
           </Route>
           <Route path="/home">
             <HeaderMain></HeaderMain>
             <Navbar></Navbar>
             <Banner></Banner>
             <Home></Home>
+            <Footer></Footer>
           </Route>
           <Route path="/about">
             <HeaderMain></HeaderMain>
             <Navbar></Navbar>
             <AboutUs></AboutUs>
+            <Footer></Footer>
           </Route>
           <PrivateRoute path="/contact">
             <HeaderMain></HeaderMain>
             <Navbar></Navbar>
             <Contact></Contact>
+            <Footer></Footer>
           </PrivateRoute>
           <PrivateRoute path="/service-details/:serviceId">
+            <HeaderMain></HeaderMain>
+            <Navbar></Navbar>
             <DerviceDetails></DerviceDetails>
+            <Footer></Footer>
           </PrivateRoute>
           <Route path="/signIn">
             <HeaderMain></HeaderMain>
@@ -55,7 +63,7 @@ function App() {
 
 
 
-          
+
           <Route path="*">
             <NotFound></NotFound>
           </Route>
