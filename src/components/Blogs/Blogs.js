@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Blogs.css';
 const Blogs = () => {
     const[blogs, setBlogs] = useState([]);
@@ -28,7 +29,8 @@ const Blogs = () => {
                                     <p><small>{blog.description}</small></p>
                                 </div>
                                 <div className="text-center">
-                                    <button className="btn detail-btn">Learn More</button>
+                                    {/* <button className="btn detail-btn">Learn More</button> */}
+                                    <Link to={`/blog-details/${blog._id}`}><button className="btn detail-btn">Learn More</button></Link>
                                 </div>
                                 
                             </div>

@@ -6,8 +6,8 @@ import './Navbar.css';
 const Navbar = () => {
     const {user,handleSignOut} = useAuth();
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light container">
+        <div className="nav-bg container">
+            <nav className="navbar navbar-expand-lg navbar-light container">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@ const Navbar = () => {
 
                         <span className="navbar-text">
                             {user.email ?
-                                <><i className="fas fa-user-circle me-2"></i><span>{user.displayName} </span> <button onClick={handleSignOut} className="appointment-btn me-2">Sign Out</button>
+                                <><i className="fas fa-user-circle me-2 text-light"></i><span className="text-light">{user.displayName} </span> <button onClick={handleSignOut} className="appointment-btn me-2">Sign Out</button>
                                 </>:
                                 <Link to="/signIn"><button className="appointment-btn">Sign In</button></Link>
                             }

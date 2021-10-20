@@ -73,6 +73,8 @@ const SignIn = () => {
           });
       }
 
+      
+
     const {googleSignIn} = useAuth();
     return (
         <div>
@@ -104,6 +106,7 @@ const SignIn = () => {
                             </label>
                         </div>
                         <button onClick={googleSignIn} className="google-btn">Sign In With Google</button>
+                        <button >reload</button>
                     </div>
             </div>
             </form>

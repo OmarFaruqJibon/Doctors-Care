@@ -1,17 +1,22 @@
+.nav-bg{
+    background-color: rgba(4,9,30,0.85);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
 .my-nav{
     padding-right: 40px;
 }
 .my-nav{
-    color: rgba(0, 0, 0, 0.918);
+    color: #fff;
     text-decoration: none;
 }
 .my-nav:hover{
-    color: #2f89fc;
+    color: #1e78c1;
 }
 
 .appointment-btn{
     background: #1e78c1;
-    border: 1px solid #17598f;
+    border: 1px solid #1e78c1;;
     color: #fff;
     cursor: pointer;
     padding: 4px 27px;

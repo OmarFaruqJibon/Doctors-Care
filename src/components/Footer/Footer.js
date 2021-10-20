@@ -21,10 +21,10 @@ const Footer = () => {
                     <h5 className="footer-menu">NAVIGATE</h5>
                     <div className="footer-nav">
                         <Link className="footer-nav-item" to="/home">Home</Link>
-                        <Link className="footer-nav-item" to="/about">About</Link>
-                        <Link className="footer-nav-item" to="/doctors">Doctors</Link>
+                        <Link className="footer-nav-item" to="/appoinment">Appoinment</Link>
                         <Link className="footer-nav-item" to="/pricing">Pricing</Link>
                         <Link className="footer-nav-item" to="/blogs">Blogs</Link>
+                        <Link className="footer-nav-item" to="/about">About</Link>
                          <Link className="footer-nav-item" to="/contact">Contact</Link>
                     </div>
                 </div>

@@ -3,13 +3,13 @@ import './Contact.css';
 
 const Contact = () => {
     return (
-        <div>
+        <div className="overflow-hidden">
             <div className="contact-container row  my-5 py-5">
                 <div className="col-md-6">
                 <div className="apoinment">
             <div className="container">
                 <div className="text-center text-white mb-5">
-                    <h2 className="text-warning">Book An Appoinment</h2>
+                    <h2 className="text-warning">Contact Us</h2>
                 </div>
                 <div className="col-md-9 mx-auto ">
                     <form action="">
