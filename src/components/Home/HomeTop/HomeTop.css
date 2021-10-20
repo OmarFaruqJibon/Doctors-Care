@@ -1,0 +1,15 @@
+.info-wrap{
+    padding-right: 45px;
+}
+.info-icons{
+    color: #1e78c1;
+    font-size: 40px;
+    margin-right:25px;
+}
+.info-title{
+    font-weight: bold;
+}
+.info-body p{
+    text-align: justify;
+    color:rgb(46, 46, 46);
+}

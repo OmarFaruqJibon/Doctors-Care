@@ -11,6 +11,7 @@ import Banner from './components/Header/Banner/Banner';
 import HeaderMain from './components/Header/HeaderMain/HeaderMain';
 import Navbar from './components/Header/Navbar/Navbar';
 import Home from './components/Home/Home/Home';
+import HomeTop from './components/Home/HomeTop/HomeTop';
 import NotFound from './components/NotFound/NotFound';
 import Pricing from './components/Pricing/Pricing';
 import PrivateRoute from './components/SignIn/PrivateRoute/PrivateRoute';
@@ -26,6 +27,7 @@ function App() {
             <HeaderMain></HeaderMain>
             <Navbar></Navbar>
             <Banner></Banner>
+            <HomeTop></HomeTop>
             <Home></Home>
             <Blogs></Blogs>
             <Footer></Footer>
@@ -34,6 +36,7 @@ function App() {
             <HeaderMain></HeaderMain>
             <Navbar></Navbar>
             <Banner></Banner>
+            <HomeTop></HomeTop>
             <Home></Home>
             <Blogs></Blogs>
             <Footer></Footer>

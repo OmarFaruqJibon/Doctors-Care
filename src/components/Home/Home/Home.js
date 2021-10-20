@@ -40,24 +40,34 @@ const Home = () => {
             </div>
 
             {/* Consultants section start */}
-            <div className="consultants-section container">
-                <div className="consultants-header text-center mb-5">
-                    <h1 className="fw-bolder">Our Consultants</h1>
-                    <p> <small>We provide worlds best services from worlds top class doctors and nurses</small> </p>
+            <div className="consultants-section">
+                <div className="consultants-top-area">
+                    <div className="text-center">
+                        <h5>PROFESSIONAL TEAM</h5>
+                        <h1>Our doctors will help you</h1>
+                        <p><small>The optimum ratio of price and quality responsible <br /> and conscientious approach</small></p>
+                    </div>
                 </div>
-                <div className="consultants-body">
-                    <div className="row g-5">
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <img src={'https://i.postimg.cc/0jPS5Q3v/doctor-1.jpg'} alt="" />
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <img src={'https://i.postimg.cc/c1PFdpNC/doctor-2.jpg'} alt="" />
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <img src={'https://i.postimg.cc/Mp2VLxJ0/doctor-3.jpg'} alt="" />
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-12">
-                            <img src={'https://i.postimg.cc/LsVtfW7t/doctor-4.jpg'} alt="" />
+
+                <div className="container">
+                    <div className="consultants-header text-center mb-5">
+                        <h1 className="fw-bolder">Our Consultants</h1>
+                        <p> <small>We provide worlds best services from worlds top class doctors and nurses</small> </p>
+                    </div>
+                    <div className="consultants-body">
+                        <div className="row g-5">
+                            <div className="col-lg-3 col-md-6 col-12">
+                                <img src={'https://i.postimg.cc/0jPS5Q3v/doctor-1.jpg'} alt="" />
+                            </div>
+                            <div className="col-lg-3 col-md-6 col-12">
+                                <img src={'https://i.postimg.cc/c1PFdpNC/doctor-2.jpg'} alt="" />
+                            </div>
+                            <div className="col-lg-3 col-md-6 col-12">
+                                <img src={'https://i.postimg.cc/Mp2VLxJ0/doctor-3.jpg'} alt="" />
+                            </div>
+                            <div className="col-lg-3 col-md-6 col-12">
+                                <img src={'https://i.postimg.cc/LsVtfW7t/doctor-4.jpg'} alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
